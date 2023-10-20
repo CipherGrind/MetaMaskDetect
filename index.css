@@ -1,0 +1,276 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: verdana;
+}
+
+.main {
+    background-color: rgb(23, 23, 23);
+}
+
+.mm-logo {
+    max-width: 125px;
+    max-height: 125px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.mm-logo:hover {
+    max-width: 125px;
+    max-height: 125px;
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.25);
+    
+}
+
+.mm-download {
+    /* background-color: #1c7186; */
+    background-image: linear-gradient(to bottom right, rgb(33, 35, 35), rgb(21, 21, 21));
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mm-title {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: rgb(57, 57, 57);
+}
+
+.mm-connect {
+    /* background-image: linear-gradient(to bottom right, rgb(28,134,125), rgb(3, 48, 59)); */
+    background-image: linear-gradient(to top left, rgb(33, 35, 35), rgb(21, 21, 21));
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-metamask {
+    cursor: pointer;
+}
+
+
+.mm-info {
+    background-image: linear-gradient(to bottom right, rgb(23, 23, 23), rgb(13, 13, 13));
+    font-size: 16px;
+}
+
+.mm-infotxt1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 125, 0);
+}
+
+.mm-infotxt1c {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff357f;
+}
+
+.mm-infotxt1b {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1ec29c;
+}
+
+.mm-infotxt2 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mm-infotxt3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mm-infotxt5 {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.info-bottom {
+    /* background-image: linear-gradient(to bottom right, rgb(0, 93, 185), rgb(1, 59, 134)); */
+    background-image: url("/MetaMaskDetect/assets/bg-skyline.png");
+    background-position: center center;
+    background-blend-mode: overlay;
+    /* background-color: #5d142f; */
+    /* background-color: #006e46; */
+    background-color: #005645;
+ 
+
+}
+
+
+
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+
+.bg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(255, 150, 0) 0%, rgb(255, 125, 0) 25%, rgb(255, 101, 0) 51%, #ff357f 100%);
+  -webkit-animation: AnimateBG 10s ease infinite;
+          animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+
+.bg2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #0b002b 0%, #20003a 25%, #38003a 51%, #ff357f 100%);
+    /* background-image: linear-gradient(-45deg, #190036 0%, #3f0055 25%, #8f006e 51%, #ff357f 100%); */
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+
+.glow-on-hover {
+    width: 210px;
+    height: 55px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff9735, #ff357f, #ff6435, #ff9735, 
+        #ff357f, #ff6435, #ff9735, #ff357f, #ff6435); 
+    /* background: linear-gradient(45deg, #0b002b, #20003a, #0d0025, #38003a, 
+    #0b002b, #20003a, #0d0025, #38003a); */
+    position: absolute;
+    top: -7.5px;
+    left:-7.5px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(7.5px);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #111; */
+    /* background: #1ec29c; */
+    background: #000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+/* /////////////////////////////// */
+
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -4;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 8s infinite;
+    animation-delay: calc(.4s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
